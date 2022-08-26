@@ -1,0 +1,15 @@
+.actionBar {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchbar {
+  max-width: 450px;
+  flex-grow: 1;
+}
+
+.buttonBar {
+  flex-grow: 1;
+  text-align: end;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "jobtracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-all": "concurrently \"npm run dev\" \"npm --prefix ./client/ run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/moment": "^2.13.0",
+    "@types/puppeteer": "^5.4.6",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/sqlite3": "^3.1.8",
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.3.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "global": "^4.4.0",
+    "moment": "^2.29.4",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^16.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sqlite3": "^5.0.11"
+  }
+}

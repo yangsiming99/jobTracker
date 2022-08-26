@@ -1,0 +1,24 @@
+.navigationBar {
+  width: 100vw;
+  padding-left: 20px;
+}
+
+.mainContent {
+  background-color: #212529;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.mainView {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.contentView {
+  padding: 2em;
+  width: 100%;
+  overflow: hidden;
+}

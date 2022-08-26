@@ -1,0 +1,5 @@
+.tablediv {
+  height: 65%;
+  overflow-y: scroll;
+  margin-bottom: 1em;
+}

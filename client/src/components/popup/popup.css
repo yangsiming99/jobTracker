@@ -1,0 +1,27 @@
+.popupbg {
+  position: absolute;
+  height: 100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.678);
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  z-index: 5;
+}
+
+.popup {
+  position: inherit;
+  height:300px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  left:0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin:auto;
+  padding:2em;
+  text-align: center;
+  border-radius: 25px;
+}
