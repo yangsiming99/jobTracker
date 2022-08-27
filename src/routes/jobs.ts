@@ -57,7 +57,6 @@ router.delete('/', async (req, res) => {
     console.log(e)
     res.json({error: "Something Went Wrong!"})
   }
-  //deletes a job from the list
 })
 
 export default router;

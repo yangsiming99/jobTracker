@@ -8,11 +8,10 @@ const test = (jobData: any) => {
       }
       const currentDate = new Date();
       const options = {year: "numeric", month: "short", day: "numeric"} as const;
-      let temp = data.replace("##date##", currentDate.toLocaleDateString('en-us', options));
-      temp = temp.replace("##jobPosition##", jobData.position);
-      temp = temp.replace("##jobPosition##", jobData.position);
-      temp = temp.replace("##company##", jobData.company);
-      temp = temp.replace("##board##", jobData.job_site);
+      let temp = data.replace(/##date##/g, currentDate.toLocaleDateString('en-us', options));
+      temp = temp.replace(/##jobPosition##/g, jobData.position);
+      temp = temp.replace(/##company##/g, jobData.company);
+      temp = temp.replace(/##board##/g, jobData.job_site);
       res(temp)
     })
   })
